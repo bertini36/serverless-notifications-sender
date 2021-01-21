@@ -1,0 +1,15 @@
+# Confs
+.todo
+.env
+.serverless
+
+# Python
+.direnv
+*.pyc
+__pycache__
+.pytest_cache
+.coverage
+
+# Node
+/node_modules/
+
