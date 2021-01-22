@@ -1,0 +1,12 @@
+version: "3"
+services:
+
+  serverless:
+    container_name: "serverless"
+    build:
+      context: .
+      dockerfile: Dockerfile
+    env_file:
+      - .env
+    volumes:
+      - ".:/code/"
