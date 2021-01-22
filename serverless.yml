@@ -1,5 +1,5 @@
 org: bertini36
-service: serverless-email-sender
+service: serverless-notifications-sender
 
 plugins:
   - serverless-python-requirements

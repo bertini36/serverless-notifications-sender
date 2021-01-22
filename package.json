@@ -1,5 +1,5 @@
 {
-  "name": "serverless-email-sender",
+  "name": "serverless-notifications-sender",
   "description": "",
   "version": "1.0.0",
   "dependencies": {},
