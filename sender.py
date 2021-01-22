@@ -3,7 +3,6 @@ import os
 import boto3
 from botocore.exceptions import ClientError
 from dotenv import load_dotenv
-import json
 
 load_dotenv()
 
@@ -11,20 +10,18 @@ AWS_REGION = 'eu-west-1'
 
 
 def handler(event, _):
-    data = json.loads(event)['body']
-    print('**************************')
-    print(data)
+    data = event['body']
     subject = data['subject']
     message = data['message']
     sender = os.getenv('SENDER_EMAIL')
-    recipients = data['to']
+    recipient = os.getenv('RECIPIENT_EMAIL')
 
     client = boto3.client('ses', region_name=AWS_REGION)
 
     try:
         response = client.send_email(
             Destination={
-                'ToAddresses': recipients,
+                'ToAddresses': [recipient],
             },
             Message={
                 'Body': {

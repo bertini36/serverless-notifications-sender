@@ -17,6 +17,11 @@ provider:
     throttle:
       burstLimit: 10
       rateLimit: 10
+  iamRoleStatements:
+    - Effect: Allow
+      Action:
+        - ses:sendEmail
+      Resource: '*'
 
 functions:
   sendEmail:
