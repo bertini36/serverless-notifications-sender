@@ -18,11 +18,11 @@
 <p align="center">
 A simple app to send notification emails to yourself deployed without cost using
 <a href="https://www.serverless.com/" target="_blank">Serverless</a> framework and
-<a href="https://aws.amazon.com/" target="_blank">AWS</a>.
+<a href="https://aws.amazon.com/" target="_blank">AWS</a>
 </p>
 <p align="center">
 Powered by <a href="https://www.serverless.com/" target="_blank">#serverless</a> and
-<a href="https://aws.amazon.com/" target="_blank">#aws</a>.
+<a href="https://aws.amazon.com/" target="_blank">#aws</a>
 </p>
 
 ## ⚙️ Environment Setup
